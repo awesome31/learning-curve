@@ -8,7 +8,11 @@ title: Introduction
 
 ## Who Am I?
 
-Hi all. My name is Rohit Tyagi and I work as an **SDE3 at Mosaic Wellness**. I have been working as a software engineer for the past 5 years, primarily working on the frontend tech stack with focus on creating robust and scalable system.
+Hi all. My name is Rohit Tyagi and I work as an **SDE3 at Mosaic Wellness**. I have been working as a software engineer for the past 5 years, primarily working on the frontend tech stack with focus on creating robust and scalable system. Currently my responsibilties include:
+
+1. Creating and delegating new set of features for the apps that we have created.
+2. Architecting the frontend systems to cater to any product needs.
+3. Managing end to end release cycle of the apps that we have created.
 
 Currently building the consultation system for ManMatters, BeBodyWise and Little Joys platforms. 😁
 

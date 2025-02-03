@@ -47,6 +47,11 @@ const config: Config = {
   ],
 
   themeConfig: {
+    docs: {
+      sidebar: {
+        hideable: true,
+      },
+    },
     // Replace with your project's social card
     image: "img/docusaurus-social-card.jpg",
     navbar: {
@@ -58,7 +63,7 @@ const config: Config = {
       },
       items: [
         {
-          href: "https://github.com/awesome31/rohit-career-book",
+          href: "https://github.com/awesome31/learning-curve",
           label: "GitHub",
           position: "right",
         },
