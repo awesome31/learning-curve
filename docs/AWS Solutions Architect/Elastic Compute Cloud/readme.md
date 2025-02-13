@@ -31,4 +31,57 @@ In this type, the hardware can also be divided based on the operatingn systems.
 
 ## EC2 Architecture and Resilience
 
-EC2 instances are virtual machines that run on EC2 Host (Physical Servers in AWS data centers). Each EC2 host is AZ resilient, which means if an AZ fails, then a host might fail. EC2 hosts can run on a shared host or a dedicated host (They are costly).
+EC2 instances are virtual machines, which mean they have an operating system and resources like storage CPU etc. They are run on top of EC2 hosts which is the physical hardware managed by AWS. We can have shared hosts or dedicated hosts (Dedicated hosts are more expensive). EC2 instances are AZ resilient, which means that if an AZ fails, then the instances fail. Lets try and understand the key points of the EC2 architecture:
+
+1. EC2 instances run inside a specifc subnet of a VPC. This mean that instances are created inside one availability zone.
+2. The EC2 host also is inside one AZ. There are many hosts inside an AZ. Each host has an instance store, which is temporary storage data, storage network and data network cards.
+3. AWS attaches an elastic network card to an instance which points the EC2 host's physical network card.
+4. We also have a long term storage service called EBS that can add volumes to an EC2 instance and they are also AZ specific.
+5. If an EC2 instance is restarted, then it is attached to the same EC2 host. If the EC2 host is down for maintainence or if the instance is stopped and then started is when the EC2 host of an instance will change.
+
+### What is EC2 Good for?
+
+1. Traditional OS+Application Compute
+2. Long-Running Compute
+3. Server style applications
+4. either burst or steady state load
+
+**It is the default Compute Service for AWS.**
+
+## EC2 Instance Types
+
+EC2 instances can be of different types and each EC2 instance is different in terms of the following things:
+
+1. Raw CPU, Memory and Network.
+2. Resource Ratio: There are some instances that can be provisioined for compute heavy workloads and others for memory heavy workloads.
+3. Data and Storage Network Bandwidth.
+4. System Architecture like Intel or AMD.
+
+### EC2 Categories
+
+1. General Purpose - Default - Diverse Workloads, equal resource ratio.
+2. Compute Optimized - Media Processing, HPC, Machine Learning etc.
+3. Memory Optimized - Processing large in-memory datasets, some database workloads.
+4. Accelerated Computing - Hardware GPU.
+5. Storage Optimized - Sequential and Random IO. Data warehousing, Elastic Search.
+
+### Decoding EC2 instance types
+
+What does this even mean?
+
+`R5dn.8xlarge`
+
+R => Instance Family, 5 => Instance Generation, 8xlarge => Instance size, dn => Additional capabilites (Can be skipped in some instaces)
+
+![Instance Types](./instance-types.png)
+
+C: Compute
+R: RAM (Mmeory)
+I: IO
+D: Dense Storage
+G: GPU
+P: Parallel Processing
+
+https://instances.vantage.sh/
+
+EC2 instance connect also requires the correct security rules to work.
