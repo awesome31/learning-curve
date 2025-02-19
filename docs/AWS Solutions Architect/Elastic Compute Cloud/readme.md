@@ -85,3 +85,38 @@ P: Parallel Processing
 https://instances.vantage.sh/
 
 EC2 instance connect also requires the correct security rules to work.
+
+https://ip-ranges.amazonaws.com/ip-ranges.json => This links helps in knowingn the IP addresses of the instance connect instances.
+
+## Elastic Block Store (EBS)
+
+### Key Terms
+
+- Direct attached storage -> Storage on the EC2 Host
+- Network attached Storage -> Volumes/Storage is delivered over the network
+- Ephemeral Storage -> Temporary Storage
+- Persistent Storage -> Permanent Storages that surpasses the life of an EC2 instance
+
+### Categories of Storage
+
+1. Block Storage - Volume presented to the OS as a collection of blocks without any structure. The OS can mount this to create a file system. In AWS, this can be physical hard drives or a volume sent over the network. Block Storage is mountable and bootable.
+
+2. File Storage - Presented as a file share. It has structure and can be mounted to the OS. It is not bootable. It is mountable. Amazon EFS is a file storage.
+
+3. Object Storage - Presented as a collection of objects. It is not mountable. It is not bootable. Amazon S3 is an object storage. Super scality is an object storage.
+
+### Storage Performance
+
+- IO (Block Size): Size of the blocks of data we are writing to the storage. 16K, 64K, 1M etc.
+- IOPS: Number of operations per second that the storage can perform. 3000, 12000 etc.
+- Throughput: The rate of data that can be transferred per second.
+
+Throughput = IO \* IOPS
+
+### EBS Architecture
+
+EBS uses Block Storage as the storage system. This storage can be encrypted using KMS. EBS is an AZ resilient service. Different size, storage type and performance based volumes can be created in EBS. They can be detached and attached to different instances and do not depend on the instance lifecycle. We can create snapshots and store it in S3 and then create a volume from that snapshot. We are billed on GB per month.
+
+### EBS Volume Types
+
+- General Purpose SSD (GP2):
