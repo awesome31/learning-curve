@@ -119,4 +119,38 @@ EBS uses Block Storage as the storage system. This storage can be encrypted usin
 
 ### EBS Volume Types
 
-- General Purpose SSD (GP2):
+- General Purpose SSD (GP2): The volumnes can be 1GB to 16TB large. For GP2 we have an IO Credit Bucket with a capacity of 5.4 million IO credits which fills at rate of baseline performance. The baseline performance is 100 IOPS/GB. If the size is above 33.33 GB then the baseline performance is 3 times the size. We also have 3000 IOPS burst rate. We have to check if it keeps replenshing. Very good for boot volumes.
+
+- General Purpose SSD (GP3): Same as GP2 but with a higher baseline performance. More economical than GP2.
+
+- Provisioned IOPS SSD (IO1/2): IOPS are configurable irrespective of the size of the volume. Provides consistent Low latency.
+
+- HDD Based (Hard Disk Drive): These are a little slow. They cannot be booted. There are twp types of HDDs:
+  - Throughput Optimized HDD (ST1) — A low-cost HDD designed for frequently accessed, throughput-intensive workloads.
+  - Cold HDD (SC1) — The lowest-cost HDD design for less frequently accessed workloads.
+
+### Instance Store Volume
+
+They are phyically connected to the EC2 host. Instances on that host can acces them. They provide the highest storage performance but they can only be attached at launch time. These store temporary data and should be treated as such. Should not be used to store persistent data. The size and IOPS of the volume depends on the EC2 instance.
+
+1. Local to an EC2 host.
+2. Add at launch ONLY.
+3. Lost on Instance move, resize or hardware failure.
+4. High Performance.
+5. You pay for it anyway - included in instance price.
+
+### Choosing between EBS and Instance Store
+
+1. If you need persistent data or resilience, then use EBS. Also if storage isolated from instance lifecycle, use EBS.
+2. If cost or super high performance is a concern, then use Instance Store.
+
+**_Remember these for the exams:_**
+
+1. GP2/GP3 - upto 16000 IOPS
+2. IO1/2 - upto 64000 IOPS
+3. RAID0 + EBS upto 260000 IOPS
+4. More than 260000 IOPS - Instance IOPS
+
+### Snapshots, Restore and Fast Snapshot Restore
+
+EBS Snapshots is a way to improve the resiliency of EBS volumes from AZ resilient to Region resilient. Snapshots are incremental volume copies to S3. The first snapshot is a full copy of the 'data' on the volume. Any future snaps are incremental. We can restore the snapshot to a new volume. Traditionally, when snapshots are used to create a volume, it takes time for the volume to be created. With Fast Snapshot Restore, we can create a volume from a snapshot in a faster time frame. FSR costs extra. Snapshots are billed per GB per month. This is used data and NOT allocated data.
