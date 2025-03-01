@@ -20,11 +20,6 @@ Currently building the consultation system for ManMatters, BeBodyWise and Little
 
 Software engineer as a career is ever changing and we as engineers need to keep ourself updated and need to keep learning new technologies. This repository is my personal log of all the things I have learnt and all the things that I have built.
 
-## My Goals for 2024-2025
-
-1. Understand AWS services and get certified as AWS Solutions Architect.
-2. Keep getting better and building scalable frontend systems.
-
 ## Apps I have been a part of
 
 ### Navis

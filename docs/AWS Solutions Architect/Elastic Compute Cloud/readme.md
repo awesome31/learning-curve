@@ -154,3 +154,20 @@ They are phyically connected to the EC2 host. Instances on that host can acces t
 ### Snapshots, Restore and Fast Snapshot Restore
 
 EBS Snapshots is a way to improve the resiliency of EBS volumes from AZ resilient to Region resilient. Snapshots are incremental volume copies to S3. The first snapshot is a full copy of the 'data' on the volume. Any future snaps are incremental. We can restore the snapshot to a new volume. Traditionally, when snapshots are used to create a volume, it takes time for the volume to be created. With Fast Snapshot Restore, we can create a volume from a snapshot in a faster time frame. FSR costs extra. Snapshots are billed per GB per month. This is used data and NOT allocated data.
+
+### EC2 and EBS Demo Points
+
+1. EBS Volumes is in Available state if they are available but not attached to an instance. It changes to In-use state if it is attached to an instance.
+
+### EBS Encryption
+
+EBS Encryption, like S3 Encryption is encrypted data at rest. We use KMS to create a DEK and use it to encrypt the EBS volume. The key is only held and used by the EC2 host, which is responsible to encrypt and decrypt the data. It does not cost anything extra to use and should be used by default.
+
+Things to know about EBS Encryption for exam:
+
+1. We can setup account wide encryption enabled for EBS. This means that all the EBS volumes created in the account will be encrypted.
+2. Each volume uses one DEK.
+3. Snapshots and future volumes use the SAME DEK. Only if a new volume is created, then a new DEK is used.
+4. OS is not aware of EBS Encryption.
+
+### Network Interfaces, Instance IPs and Instance DNS

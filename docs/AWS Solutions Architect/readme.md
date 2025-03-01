@@ -1,5 +1,5 @@
 ---
-title: AWS Solutions Architect
+title: AWS
 ---
 
 # AWS Solutions Architect
