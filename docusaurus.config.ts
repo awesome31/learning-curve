@@ -5,7 +5,7 @@ import type * as Preset from "@docusaurus/preset-classic";
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: "Learning Curve",
+  title: "Commit & Learn",
   tagline: "Learning is cool",
   favicon: "img/favicon.ico",
   // Set the production url of your site here
@@ -56,10 +56,10 @@ const config: Config = {
     image: "img/docusaurus-social-card.jpg",
     navbar: {
       hideOnScroll: true,
-      title: "Learning Curve",
+      title: "Commit & Learn",
       logo: {
-        alt: "Learning Curve",
-        src: "img/logo.JPG",
+        alt: "Commit & Learn",
+        src: "img/new-logo.webp",
       },
       items: [
         {

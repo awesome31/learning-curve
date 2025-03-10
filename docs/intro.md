@@ -4,7 +4,7 @@ slug: /
 title: Introduction
 ---
 
-# Learning Curve
+# Commit & Learn
 
 ## Who Am I?
 
@@ -19,6 +19,10 @@ Currently building the consultation system for ManMatters, BeBodyWise and Little
 ## What is this?
 
 Software engineer as a career is ever changing and we as engineers need to keep ourself updated and need to keep learning new technologies. This repository is my personal log of all the things I have learnt and all the things that I have built.
+
+## Goals for 2025
+
+This year I am focused on learning as much as I can about cloud services and how they work. I want to complete AWS Solutions Architect Associate certification.
 
 ## Apps I have been a part of
 
