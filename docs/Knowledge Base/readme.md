@@ -105,3 +105,23 @@ How Next.js Uses Chunks:
 - **Vendor Chunks**: Third-party libraries are separated into vendor chunks to optimize caching.
 
 In summary, chunks are a powerful tool to optimize the performance of your web application by splitting the code into smaller, manageable pieces that can be loaded as needed. This results in faster load times, better caching, and an overall smoother user experience.
+
+### Suppose I have an image with some aspect ratio ( Lets assume 4:3). And to the img tag I only hardcode the height (40px). Will it automatically calculate the width? And if yes how much? Also Why is that if I give width 100%, it still respects the aspect ratio on chrome but not on safari?
+
+Yes, if you hardcode only the height (40px) in the <img> tag and the image has an intrinsic aspect ratio of 4:3, the browser will automatically calculate the width while maintaining the aspect ratio.
+
+The browser preserves the aspect ratio by default unless you explicitly override it with CSS (width property).
+If width: auto; is applied in CSS, the width will be calculated automatically.
+
+This happens due to browser-specific handling of intrinsic aspect ratios when width: 100% is applied without explicitly setting height: auto. Here’s why Chrome and Safari behave differently:
+
+How Browsers Handle width: 100% Without height: auto
+Chrome (and most modern browsers)
+
+Chrome respects the intrinsic aspect ratio of the image even when width: 100% is set.
+It automatically calculates the height proportionally unless explicitly overridden.
+The behavior comes from Chrome's default CSS rules for <img> elements, which typically include height: auto by default.
+Safari
+
+Safari does not always respect the aspect ratio when width: 100% is applied unless height: auto is explicitly set.
+This happens because Safari has a stricter box model interpretation and may not automatically preserve aspect ratios in cases where the height isn’t explicitly defined.
