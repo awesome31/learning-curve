@@ -108,7 +108,7 @@ In summary, chunks are a powerful tool to optimize the performance of your web a
 
 ### Suppose I have an image with some aspect ratio ( Lets assume 4:3). And to the img tag I only hardcode the height (40px). Will it automatically calculate the width? And if yes how much? Also Why is that if I give width 100%, it still respects the aspect ratio on chrome but not on safari?
 
-Yes, if you hardcode only the height (40px) in the <img> tag and the image has an intrinsic aspect ratio of 4:3, the browser will automatically calculate the width while maintaining the aspect ratio.
+Yes, if you hardcode only the height (40px) in the img tag and the image has an intrinsic aspect ratio of 4:3, the browser will automatically calculate the width while maintaining the aspect ratio.
 
 The browser preserves the aspect ratio by default unless you explicitly override it with CSS (width property).
 If width: auto; is applied in CSS, the width will be calculated automatically.
@@ -120,7 +120,7 @@ Chrome (and most modern browsers)
 
 Chrome respects the intrinsic aspect ratio of the image even when width: 100% is set.
 It automatically calculates the height proportionally unless explicitly overridden.
-The behavior comes from Chrome's default CSS rules for <img> elements, which typically include height: auto by default.
+The behavior comes from Chrome's default CSS rules for img elements, which typically include height: auto by default.
 Safari
 
 Safari does not always respect the aspect ratio when width: 100% is applied unless height: auto is explicitly set.
