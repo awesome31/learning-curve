@@ -126,7 +126,7 @@ observer.observe(document.querySelector("div"));
 
 Virtualization is a UI optimization technique that involves maintaining a data in memory while rendering only a limited subset.
 
-[Refer to this code to see how Virtualization can be implemented](https://github.com/tyagiro31/learning-curve/tree/main/modules/frontend-system-design/virtualization)
+[Refer to this code to see how Virtualization can be implemented](https://github.com/awesome31/learning-curve/tree/main/modules/frontend-system-design/virtualization)
 
 ## Application State and Networking
 
@@ -179,7 +179,7 @@ We have 2 main protocols: UDP and TCP. UDP is connectionless and TCP is connecti
 HTTP/3 is a new protocol that is based on QUIC. UDP is used for QUIC. Web RTC also uses UDP. There are few ways to design network architecture:
 
 1. Long Polling: We keep making a request to the server and wait for a response. It has a few issues like: Energy Consumption, Latency. Usually Long Polling should be avoided for a mobile web application.
-2. Server Sent Events: Duplex communication is only used when establishing initial connection. Reconnection is handled automatically. text/event-stream needs to be used for SSE. Check [this](https://github.com/tyagiro31/learning-curve/tree/main/modules/frontend-system-design/sse) for more details.
+2. Server Sent Events: Duplex communication is only used when establishing initial connection. Reconnection is handled automatically. text/event-stream needs to be used for SSE. Check [this](https://github.com/awesome31/learning-curve/tree/main/modules/frontend-system-design/sse) for more details.
 3. WebSockets: Duplex communication is used for all the time. First the client sends a handshake request with UPGRADE header. WebSockets are very resource consuming.
 
 ## Web Application Performance
