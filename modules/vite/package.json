@@ -1,0 +1,21 @@
+{
+  "name": "vite",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "vite --host",
+    "build": "vite build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "vite": "^6.2.5"
+  },
+  "devDependencies": {
+    "postcss-nested": "^7.0.2",
+    "vite-imagetools": "^7.0.5"
+  }
+}

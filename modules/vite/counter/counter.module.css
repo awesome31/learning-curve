@@ -1,0 +1,7 @@
+/**
+ * This is a module scoped CSS file. This will be scoped to the specific module that actually uses it.
+ */
+
+.counter {
+  font-size: 24px;
+}

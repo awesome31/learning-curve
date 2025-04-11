@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>This is a Document</title>
+    <!--
+      We can give relative paths with vite and vite will resolve the path
+    -->
+    <script src="./counter/index.js" type="module"></script>
+    <link rel="stylesheet" href="./counter/styles.css" />
+  </head>
+  <body>
+    <div id="app">
+      <h1>This is a counter</h1>
+      <div id="counter"></div>
+      <button id="increment">Increment</button>
+      <button id="decrement">Decrement</button>
+      <div id="image"></div>
+    </div>
+  </body>
+</html>
