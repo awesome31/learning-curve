@@ -22,7 +22,7 @@ Software engineer as a career is ever changing and we as engineers need to keep 
 
 ## Goals for 2025
 
-This year I am focused on learning as much as I can about cloud services and how they work. I want to complete AWS Solutions Architect Associate certification.
+This year I am going to be learning Rust. I want to be proficient in Rust by the end of the year.
 
 ## Apps I have been a part of
 
