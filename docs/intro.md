@@ -20,10 +20,6 @@ Currently building the consultation system for ManMatters, BeBodyWise and Little
 
 Software engineer as a career is ever changing and we as engineers need to keep ourself updated and need to keep learning new technologies. This repository is my personal log of all the things I have learnt and all the things that I have built.
 
-## Goals for 2025
-
-This year I am going to be learning Rust. I want to be proficient in Rust by the end of the year.
-
 ## Apps I have been a part of
 
 ### Navis
