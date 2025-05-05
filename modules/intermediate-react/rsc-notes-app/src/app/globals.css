@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Short+Stack&display=swap");
+body {
+  font-family: "Short Stack", cursive;
+  padding: 50px;
+}
+
+/* Minimal CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+.doodle button,
+.doodle textarea,
+.doodle input,
+.doodle select {
+  font-family: "Short Stack", cursive;
+}
+
+.doodle button {
+  cursor: pointer;
+}
+
+td {
+  min-width: 200px;
+}
+
+.note-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.note-fieldset {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.note-form input,
+.note-form textarea,
+.note-form select {
+  margin-bottom: 10px;
+  display: block;
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+select {
+  padding: 10px;
+}

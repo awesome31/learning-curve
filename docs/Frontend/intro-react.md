@@ -1,4 +1,4 @@
-# React
+# Introduction to React
 
 This page contains all the things that we will be learning about React. We will talk about react 18 and 19.
 
