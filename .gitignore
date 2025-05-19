@@ -20,3 +20,5 @@ yarn-debug.log*
 yarn-error.log*
 src/daily-logs
 modules/fantasy-banner
+
+src/docs/Mosaic/*

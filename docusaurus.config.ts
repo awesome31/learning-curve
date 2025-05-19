@@ -34,6 +34,8 @@ const config: Config = {
       "classic",
       {
         docs: {
+          showLastUpdateTime: true,
+          showLastUpdateAuthor: true,
           routeBasePath: "/",
           sidebarPath: "./sidebars.ts",
           // Please change this to your repo.
