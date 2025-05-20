@@ -5,6 +5,7 @@ import type * as Preset from "@docusaurus/preset-classic";
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
+  clientModules: [require.resolve("./src/components/AnalyticsProvider")],
   title: "Commit & Learn",
   tagline: "Learning is cool",
   favicon: "img/favicon.ico",
