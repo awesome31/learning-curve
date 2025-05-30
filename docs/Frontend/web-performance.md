@@ -192,9 +192,9 @@ FCP depends on TTFB too. FCP checks for the time it takes to render the first co
 - **Lazy Loading Resources**: Non-Critical path resources can be loaded later.
 
 ```
-    <script>: Downloads and executes the script
-    <script defer>: Downloads the script and executes after the DOM is ready
-    <script async>: Downloads the script and executes as soon as it is available
+    <script>: Downloads and executes the script and blocks HTML parsing
+    <script defer>: Downloads the script and executes after the DOM is ready. Execution order is guaranteed.
+    <script async>: Downloads the script and executes as soon as it is available. Execution order is not guaranteed.
 ```
 
 We should almost always use `defer`. Execution order is guaranteed.
