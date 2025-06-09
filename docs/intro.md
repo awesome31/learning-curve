@@ -45,7 +45,11 @@ Software engineering is a dynamic and ever-evolving field. As engineers, we must
 1. https://www.anar.biz/
 2. https://play.google.com/store/apps/dev?id=7657012068745593110&hl=en_IN&pli=1
 
-### Contact
+## My favorite Blogs:
+
+1. https://frontendmasters.com/blog/react-internals-which-useeffect-runs-first/?utm_source=tldrwebdev
+
+## Contact
 
 Anyone who wants to build something exciting and needs technical help, can reach out to me at my below socials:
 

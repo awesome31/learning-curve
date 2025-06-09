@@ -16,8 +16,17 @@ This is a new module that we are creating. This module is responsible for:
 
 1. Identifying the screen and parameters from the deeplink.
 2. Setting the parameters like utm parameters and any other parameters from the deeplink.
+3. Exporting static config that can be used by other modules.
 
 ## App Config Module
+
+This is a new module that we are creating. This module is responsible for:
+
+1. Storing the app config based on the linking modules parameters.
+2. Storing the text copies that need to be used.
+3. Storing static config.
+4. Merge static config and server driven configs.
+5. App Logo changes.
 
 ## Navigation Module
 
