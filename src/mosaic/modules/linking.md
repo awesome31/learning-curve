@@ -23,10 +23,8 @@ This is a new module that we are creating. This module is responsible for:
 This is a new module that we are creating. This module is responsible for:
 
 1. Storing the app config based on the linking modules parameters.
-2. Storing the text copies that need to be used.
-3. Storing static config.
-4. Merge static config and server driven configs.
-5. App Logo changes.
+2. Storing static config.
+3. Merge static config and server driven configs.
 
 ## Navigation Module
 
