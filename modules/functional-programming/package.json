@@ -1,0 +1,17 @@
+{
+  "name": "functional-programming",
+  "version": "1.0.0",
+  "main": "basic-functions.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "type": "module",
+  "dependencies": {
+    "@types/ramda": "^0.30.2",
+    "ramda": "^0.31.3"
+  }
+}

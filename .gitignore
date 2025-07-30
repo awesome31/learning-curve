@@ -24,3 +24,4 @@ modules/fantasy-banner
 src/docs/Mosaic/*
 
 modules/sqlite3/data.db
+a.out

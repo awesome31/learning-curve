@@ -28,4 +28,10 @@ This is a new module that we are creating. This module is responsible for:
 
 ## Navigation Module
 
+This is a new module that we are creating. This module is responsible for:
+
+1. Setting up navigators and all the related navigation logic.
+2. Figuring out the screens based on the app config and the linking modules parameters.
+3. Figuring out the first screen based on the app config and the linking modules parameters.
+
 ## Launch Manager Module
