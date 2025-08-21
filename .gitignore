@@ -22,6 +22,7 @@ src/daily-logs
 modules/fantasy-banner
 
 src/docs/Mosaic/*
+src/mosaic
 
 modules/sqlite3/data.db
 a.out

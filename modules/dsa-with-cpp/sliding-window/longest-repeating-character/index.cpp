@@ -1,0 +1,3 @@
+/**
+ * Longest Repeating Character.
+ */
