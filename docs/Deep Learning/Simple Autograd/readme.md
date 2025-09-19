@@ -30,8 +30,6 @@ y = f(xs)
 plt.plot(xs, y)
 ```
 
-    [<matplotlib.lines.Line2D at 0x121b01580>]
-
 ![png](assets/index_4_1.png)
 
 The definition of derivative is that suppose I change the value of x by a very small amount, how does my function respond to it or how sensitive is my function to the change in x? The sign tells us if the function is increasing or decreasing and the magnitude tells us how sensitive the function is to the change in x. Using limits, we can actually get the approximate value of the derivative at any point. For example, at x = 3, then derivative points in direction of increasing y and at -3, it points in direction of decreasing y.
