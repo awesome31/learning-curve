@@ -10,6 +10,14 @@ Lets breakdown what a specific word in a dataset is telling us. Lets take exampl
 
 And we have multiple such words. So there is a lot of structure here that we can try and model.
 
+## What is the Bigram Model?
+
+Let us discuss what is the Bigram model that we are going to be creating. In general a model has 3 components:
+
+1. Input: In Bigram the Input will be a character.
+2. Labels: In Bigram the Labels will be the next character.
+3. Output: In Bigram the Output is the probability of each character in the vocabulary.
+
 ## Reading the dataset
 
 ```python
