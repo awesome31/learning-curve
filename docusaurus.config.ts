@@ -14,7 +14,7 @@ const config: Config = {
       },
     ],
   ],
-  title: "Commit & Learn",
+  title: "LearnLog",
   tagline: "Learning is cool",
   favicon: "img/favicon.ico",
   // Set the production url of your site here
@@ -52,6 +52,7 @@ const config: Config = {
           editUrl:
             "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
         },
+
         blog: false,
       } satisfies Preset.Options,
     ],
@@ -67,10 +68,10 @@ const config: Config = {
     image: "img/docusaurus-social-card.jpg",
     navbar: {
       hideOnScroll: true,
-      title: "Commit & Learn",
+      title: "LearnLog",
       logo: {
-        alt: "Commit & Learn",
-        src: "img/new-logo.webp",
+        alt: "LearnLog",
+        src: "img/commit-and-learn.png",
       },
       items: [
         {
