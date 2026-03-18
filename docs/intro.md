@@ -6,6 +6,8 @@ title: Introduction
 
 # LearnLog
 
+**Hello! Welcome to LearnLog** - a place where curiosity meets code. Whether you're here to explore AI, deep learning, frontend engineering, or just see what I've been learning lately, I'm glad you stopped by.
+
 ## Who Am I?
 
 Hi! I'm **Rohit Tyagi**, a software engineer with 6+ years of experience building products that scale. My journey started in frontend engineering, crafting robust web and mobile applications, architecting scalable systems, and leading teams at **Mosaic Wellness** as an SDE3.
